@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Reberson Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-laptop-code"></i> Reberson Tech</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="downloads.html"><i class="fas fa-download"></i> Downloads</a></li>
+                <li><a href="posts.html"><i class="fas fa-blog"></i> Posts</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+            </ul>
+            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+    <main>
+        <h2>Contato</h2>
+        <form id="contact-form" action="https://formspree.io/f/xqkjlynr" method="POST">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <div id="message-box" style="display: none;"></div>
+        </form>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Reberson Tech</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

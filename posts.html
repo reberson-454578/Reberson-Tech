@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reberson Tech - Posts">
+    <title>Posts - Reberson Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-laptop-code"></i> Reberson Tech</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="downloads.html"><i class="fas fa-download"></i> Downloads</a></li>
+                <li><a href="posts.html"><i class="fas fa-blog"></i> Posts</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+            </ul>
+            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+    <main>
+        <section class="filter-search">
+            <div class="filter">
+                <label for="category-filter">Filtrar por categoria:</label>
+                <select id="category-filter">
+                    <option value="all">Todos</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                </select>
+            </div>
+            <div class="search">
+                <label for="search-bar">Pesquisar posts:</label>
+                <input type="text" id="search-bar" placeholder="Digite para pesquisar...">
+            </div>
+        </section>
+        <section class="posts-grid">
+            <div class="post-card" data-category="hardware" data-title="Título do Post de Hardware">
+                <img src="image1.jpg" alt="Post de Hardware">
+                <h3>Título do Post de Hardware</h3>
+                <p>Resumo curto do post de hardware...</p>
+                <a href="post1.html" class="read-more">Leia mais</a>
+            </div>
+            <div class="post-card" data-category="software" data-title="Título do Post de Software">
+                <img src="image2.jpg" alt="Post de Software">
+                <h3>Título do Post de Software</h3>
+                <p>Resumo curto do post de software...</p>
+                <a href="post2.html" class="read-more">Leia mais</a>
+            </div>
+            <!-- Adicione mais post cards conforme necessário -->
+        </section>
+        <div class="pagination">
+            <a href="#" class="prev">&laquo; Anterior</a>
+            <a href="#" class="page-num active">1</a>
+            <a href="#" class="page-num">2</a>
+            <a href="#" class="page-num">3</a>
+            <a href="#" class="next">Próximo &raquo;</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Reberson Tech</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

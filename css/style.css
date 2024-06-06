@@ -1,0 +1,439 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #nav-list li {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+    
+    #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+    }
+}
+
+main {
+    padding: 5em 1em 1em 1em;
+    margin-top: 80px; /* Offset for the fixed header */
+    max-width: 1200px;
+    margin: 80px auto 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    padding-bottom: 3em; /* Extra padding for pagination */
+    animation: fadeIn 1s ease-in;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.welcome, .about, .contact {
+    padding: 2em 0;
+}
+
+.services, .testimonials, .recent-posts, .popular-downloads {
+    background-color: #f9f9f9;
+    padding: 2em 0;
+    border-radius: 8px;
+}
+
+.service, .testimonial, .post, .download {
+    margin: 1em;
+    padding: 1em;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.service i, .testimonial i, .post i, .download i {
+    font-size: 2em;
+    color: #ff9900;
+    margin-right: 0.5em;
+}
+
+button, .button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    box-shadow: 0 -4px 2px -2px gray;
+    position: relative;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animation for fade in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.service, .testimonial, .post, .download {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service:hover, .testimonial:hover, .post:hover, .download:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5em; /* Increased spacing for better readability */
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group i {
+    position: absolute;
+    left: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: #333;
+    pointer-events: none;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%; /* Ajuste para a largura dos inputs */
+    padding: 1em 1em 1em 40px; /* Espaço ajustado para o ícone */
+    font-size: 1em; /* Larger font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px; /* Increased height for textarea */
+}
+
+#message-box {
+    margin-top: 1em;
+    font-weight: bold;
+    text-align: center; /* Centralizar a mensagem */
+}
+
+/* Estilo da grade de posts */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover;
+}
+
+.post-card h3 {
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+.post-card p {
+    padding: 0 1em;
+    font-size: 1em;
+    color: #333;
+    flex: 1;
+}
+
+.post-card .read-more {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #ccc;
+    transition: background 0.3s ease;
+}
+
+.post-card .read-more:hover {
+    background: #ff9900;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.pagination a {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.pagination a:hover {
+    background: #ff9900;
+    color: #fff;
+}
+
+.pagination a.active {
+    background: #ff9900;
+    color: #fff;
+}
+
+.filter-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.filter, .search {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.filter label, .search label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter select, .search input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.filter select:focus, .search input:focus {
+    border-color: #333;
+}
+
+section.about {
+    background: #f9f9f9;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2em auto;
+    text-align: left;
+}
+
+section.about h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+section.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.downloads {
+    padding: 4em 2em; /* Aumentando o padding para mais espaço */
+}
+
+.download-category {
+    margin-bottom: 3em; /* Aumentando o espaço entre as categorias */
+    text-align: left;
+}
+
+.download-category h3 {
+    font-size: 2em; /* Aumentando o tamanho do título das categorias */
+    color: #333;
+    margin-bottom: 1em; /* Aumentando o espaço abaixo dos títulos */
+    border-bottom: 2px solid #ccc; /* Adicionando uma linha inferior para destacar */
+    padding-bottom: 0.5em; /* Espaço entre o título e a linha inferior */
+}
+
+.download-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Removendo margens */
+}
+
+.download-category ul li {
+    margin-bottom: 1em; /* Aumentando o espaço entre os itens da lista */
+}
+
+.download-category ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2em; /* Aumentando o tamanho da fonte dos links */
+    transition: color 0.3s ease;
+}
+
+.download-category ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #nav-list li {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+    
+    #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        cursor: pointer;
+    }
+}
