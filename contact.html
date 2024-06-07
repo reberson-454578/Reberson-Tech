@@ -24,7 +24,7 @@
     </header>
     <main>
         <h2>Contato</h2>
-        <form id="contact-form" action="/send-email" method="POST" enctype="multipart/form-data">
+        <form id="contact-form" action="https://formspree.io/f/xqkjlynr" method="POST">
             <div class="form-group">
                 <label for="name">Nome:</label>
                 <i class="fas fa-user"></i>
@@ -38,10 +38,6 @@
             <div class="form-group">
                 <label for="message">Mensagem: </label>
                 <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="file">Anexar Arquivo:</label>
-                <input type="file" id="file" name="file" required>
             </div>
             <button type="submit">Enviar</button>
             <div id="message-box" style="display: none;"></div>
