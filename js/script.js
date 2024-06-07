@@ -157,3 +157,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('open');
+        if (navList.classList.contains('open')) {
+            menuToggle.innerHTML = '&#10005;'; // X icon
+        } else {
+            menuToggle.innerHTML = '&#9776;'; // Hamburger icon
+        }
+    });
+});
