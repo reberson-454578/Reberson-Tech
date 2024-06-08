@@ -252,7 +252,7 @@ form {
 }
 
 .form-group input, .form-group textarea {
-    width: 100%;
+    width: 350px;
     padding: 1em 1em 1em 40px;
     font-size: 1em;
     border: 1px solid #ccc;
@@ -693,16 +693,4 @@ nav ul {
         margin: 0.5em 0;
     }
 
-    form {
-        padding: 1em;
-    }
-}
-
-.form-group input[type="file"] {
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0.5em;
-    box-sizing: border-box;
-    width: 100%;
 }
