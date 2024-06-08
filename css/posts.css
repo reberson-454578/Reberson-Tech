@@ -1,6 +1,6 @@
 .posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1em;
   padding: 1em;
 }
@@ -12,14 +12,17 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 20px;
 }
 
 .post-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .post-card h3 {
@@ -35,7 +38,8 @@
 }
 
 .post-card .read-more {
-  display: block;
+  display: grid;
+  grid-template-rows: 1fr auto;
   text-align: center;
   padding: 1em;
   background: #333;
@@ -43,6 +47,7 @@
   text-decoration: none;
   border-top: 1px solid #ccc;
   transition: background 0.3s ease;
+  border-radius: 8px;
 }
 
 .post-card .read-more:hover {
