@@ -1,0 +1,22 @@
+section.about {
+  background: #f9f9f9;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em auto;
+  text-align: left;
+}
+
+section.about h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+section.about p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1em;
+}

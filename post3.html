@@ -1,111 +1,257 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diferenças entre HD e SSD - Reberson Tech</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="images/blog.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/responsividade.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
     <header>
-        <h1><i class="fas fa-laptop-code"></i> Reberson Tech</h1>
-        <nav>
-            <ul id="nav-list">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="downloads.html"><i class="fas fa-download"></i> Downloads</a></li>
-                <li><a href="posts.html"><i class="fas fa-blog"></i> Posts</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contato</a></li>
-                <li><a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
-            </ul>
-            <button id="menu-toggle"><i class="fas fa-bars"></i></button>
-        </nav>
+      <h1><i class="fas fa-laptop-code"></i> Reberson Tech</h1>
+      <nav>
+        <ul id="nav-list">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="downloads.html"
+              ><i class="fas fa-download"></i> Downloads</a
+            >
+          </li>
+          <li>
+            <a href="posts.html"><i class="fas fa-blog"></i> Posts</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contato</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-info-circle"></i> Sobre</a>
+          </li>
+        </ul>
+        <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      </nav>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner-content">
-                <h2>Processadores Intel vs. AMD: Qual Escolher?</h2>
-                <p>Entenda quais são as vantagens e desvantagens de cada marca para saber qual será o seu próximo processador.</p>
-            </div>
-        </section>
-        
-        <article>
-            <img src="images/intel_vs_amd.png" alt="Intel vs. AMD">
-            <p>A escolha entre processadores Intel e AMD é uma das decisões mais importantes na montagem ou atualização de um computador. Ambas as marcas oferecem excelentes opções, mas cada uma possui características que podem se adequar melhor a diferentes tipos de usuários e aplicações. Neste post, vamos explorar as principais diferenças, vantagens e desvantagens de cada uma.</p>
-            <h3>1. Histórico e Visão Geral</h3>
-            <h4>Intel</h4>
-            <p>A Intel tem dominado o mercado de processadores por muitos anos, conhecida pela sua confiabilidade e inovação contínua. A linha de processadores Intel inclui as séries Core i3, i5, i7 e i9, além das séries Xeon voltadas para servidores.</p>
-            <h4>AMD</h4>
-            <p>A AMD tem ganhado destaque nos últimos anos, especialmente com o lançamento da arquitetura Ryzen. Os processadores Ryzen são conhecidos por oferecer um excelente desempenho a um custo mais acessível. A linha Ryzen inclui as séries Ryzen 3, 5, 7 e 9, além dos processadores Threadripper para uso profissional intensivo.</p>
-            <h3>2. Desempenho</h3>
-            <h4>Intel</h4>
-            <ul>
-                <li><strong>Desempenho Single-Core:</strong> Historicamente, a Intel tem tido vantagem em desempenho single-core, o que é importante para muitas aplicações e jogos.</li>
-                <li><strong>Turbo Boost:</strong> Tecnologia que permite aumentar a frequência do processador automaticamente quando necessário.</li>
-                <li><strong>Estabilidade e Compatibilidade:</strong> Intel é frequentemente elogiada pela sua estabilidade e compatibilidade com uma ampla gama de software e hardware.</li>
-            </ul>
-            <h4>AMD</h4>
-            <ul>
-                <li><strong>Desempenho Multi-Core:</strong> Os processadores AMD Ryzen são conhecidos por seu excelente desempenho multi-core, sendo ideais para multitarefas, renderização de vídeo e outras tarefas intensivas.</li>
-                <li><strong>Precision Boost:</strong> Tecnologia similar ao Turbo Boost da Intel, ajustando automaticamente a frequência do processador.</li>
-                <li><strong>Custo-Benefício:</strong> A AMD oferece um desempenho impressionante a preços mais acessíveis, tornando-se uma escolha atraente para muitos usuários.</li>
-            </ul>
-            <h3>3. Preço</h3>
-            <h4>Intel</h4>
-            <p>Os processadores Intel tendem a ser mais caros, especialmente os modelos de alta performance como o Core i9. No entanto, eles também oferecem opções econômicas na série Core i3 e i5.</p>
-            <h4>AMD</h4>
-            <p>AMD geralmente oferece uma melhor relação custo-benefício, especialmente nas gamas médias e altas, como Ryzen 5 e Ryzen 7, que muitas vezes superam os concorrentes da Intel em termos de preço e desempenho multi-core.</p>
-            <h3>4. Consumo de Energia e Calor</h3>
-            <h4>Intel</h4>
-            <p>Os processadores Intel são conhecidos por seu baixo consumo de energia e eficiência térmica, o que pode ser uma vantagem em sistemas compactos e laptops.</p>
-            <h4>AMD</h4>
-            <p>Os processadores Ryzen da AMD tendem a consumir mais energia e gerar mais calor, especialmente os modelos de alta performance como Ryzen 9 e Threadripper. No entanto, com um bom sistema de refrigeração, isso pode ser gerenciado.</p>
-            <h3>5. Gráficos Integrados</h3>
-            <h4>Intel</h4>
-            <p>Muitos processadores Intel vêm com gráficos integrados (Intel UHD Graphics), o que pode ser suficiente para tarefas diárias e jogos leves sem a necessidade de uma placa de vídeo dedicada.</p>
-            <h4>AMD</h4>
-            <p>A AMD oferece processadores com gráficos integrados sob a linha Ryzen com gráficos Vega, que geralmente têm um desempenho superior aos gráficos integrados da Intel, sendo adequados para jogos mais exigentes e edição de vídeo.</p>
-            <h3>6. Compatibilidade de Plataforma</h3>
-            <h4>Intel</h4>
-            <p>A Intel costuma mudar os sockets com mais frequência, o que pode exigir uma atualização da placa-mãe ao trocar de processador.</p>
-            <h4>AMD</h4>
-            <p>A AMD é conhecida por manter a compatibilidade do socket AM4 por várias gerações de processadores Ryzen, facilitando as atualizações de CPU sem necessidade de trocar a placa-mãe.</p>
-            <h3>7. Conclusão: Qual escolher?</h3>
-            <h4>Para Jogos</h4>
-            <ul>
-                <li><strong>Intel: </strong>Se você busca o máximo desempenho em jogos, especialmente em resoluções mais baixas (1080p), a Intel ainda pode ter uma leve vantagem devido ao seu desempenho single-core superior.</li>
-                <li><strong>AMD: </strong>No entanto, os processadores Ryzen 5000 e 7000 da AMD também oferecem excelente desempenho em jogos, muitas vezes a um preço mais competitivo.</li>
-            </ul>
-            <h4>Para Produtividade e Multitarefas</h4>
-            <ul>
-                <li><strong>AMD: </strong>Se você realiza muitas tarefas simultaneamente ou usa aplicações que aproveitam múltiplos núcleos (como edição de vídeo, renderização 3D, etc.), os processadores Ryzen da AMD são uma excelente escolha.</li>
-                <li><strong>Intel: </strong>Os processadores Intel de alto desempenho também são uma boa opção, mas geralmente a um custo mais alto.</li>
-            </ul>
-            <h4>Para Uso Geral e Orçamento</h4>
-            <ul>
-                <li><strong>AMD: </strong>Oferece excelente desempenho a preços acessíveis, sendo uma ótima escolha para a maioria dos usuários.</li>
-                <li><strong>Intel: </strong>Oferece opções econômicas, mas você pode obter mais núcleos e threads pelo mesmo preço com a AMD.</li>
-            </ul>
-            <h3>Considerações Finais</h3>
-            <p>A escolha entre Intel e AMD dependerá das suas necessidades específicas e do seu orçamento. Ambas as marcas oferecem produtos de alta qualidade, e a decisão final deve considerar o uso pretendido do computador, seja para jogos, produtividade, ou uso geral.</p>
-        </article>
-        </article>
+      <section class="banner">
+        <div class="banner-content">
+          <h2>Processadores Intel vs. AMD: Qual Escolher?</h2>
+          <p>
+            Entenda quais são as vantagens e desvantagens de cada marca para
+            saber qual será o seu próximo processador.
+          </p>
+        </div>
+      </section>
+
+      <article>
+        <img src="images/intel_vs_amd.png" alt="Intel vs. AMD" />
+        <p>
+          A escolha entre processadores Intel e AMD é uma das decisões mais
+          importantes na montagem ou atualização de um computador. Ambas as
+          marcas oferecem excelentes opções, mas cada uma possui características
+          que podem se adequar melhor a diferentes tipos de usuários e
+          aplicações. Neste post, vamos explorar as principais diferenças,
+          vantagens e desvantagens de cada uma.
+        </p>
+        <h3>1. Histórico e Visão Geral</h3>
+        <h4>Intel</h4>
+        <p>
+          A Intel tem dominado o mercado de processadores por muitos anos,
+          conhecida pela sua confiabilidade e inovação contínua. A linha de
+          processadores Intel inclui as séries Core i3, i5, i7 e i9, além das
+          séries Xeon voltadas para servidores.
+        </p>
+        <h4>AMD</h4>
+        <p>
+          A AMD tem ganhado destaque nos últimos anos, especialmente com o
+          lançamento da arquitetura Ryzen. Os processadores Ryzen são conhecidos
+          por oferecer um excelente desempenho a um custo mais acessível. A
+          linha Ryzen inclui as séries Ryzen 3, 5, 7 e 9, além dos processadores
+          Threadripper para uso profissional intensivo.
+        </p>
+        <h3>2. Desempenho</h3>
+        <h4>Intel</h4>
+        <ul>
+          <li>
+            <strong>Desempenho Single-Core:</strong> Historicamente, a Intel tem
+            tido vantagem em desempenho single-core, o que é importante para
+            muitas aplicações e jogos.
+          </li>
+          <li>
+            <strong>Turbo Boost:</strong> Tecnologia que permite aumentar a
+            frequência do processador automaticamente quando necessário.
+          </li>
+          <li>
+            <strong>Estabilidade e Compatibilidade:</strong> Intel é
+            frequentemente elogiada pela sua estabilidade e compatibilidade com
+            uma ampla gama de software e hardware.
+          </li>
+        </ul>
+        <h4>AMD</h4>
+        <ul>
+          <li>
+            <strong>Desempenho Multi-Core:</strong> Os processadores AMD Ryzen
+            são conhecidos por seu excelente desempenho multi-core, sendo ideais
+            para multitarefas, renderização de vídeo e outras tarefas
+            intensivas.
+          </li>
+          <li>
+            <strong>Precision Boost:</strong> Tecnologia similar ao Turbo Boost
+            da Intel, ajustando automaticamente a frequência do processador.
+          </li>
+          <li>
+            <strong>Custo-Benefício:</strong> A AMD oferece um desempenho
+            impressionante a preços mais acessíveis, tornando-se uma escolha
+            atraente para muitos usuários.
+          </li>
+        </ul>
+        <h3>3. Preço</h3>
+        <h4>Intel</h4>
+        <p>
+          Os processadores Intel tendem a ser mais caros, especialmente os
+          modelos de alta performance como o Core i9. No entanto, eles também
+          oferecem opções econômicas na série Core i3 e i5.
+        </p>
+        <h4>AMD</h4>
+        <p>
+          AMD geralmente oferece uma melhor relação custo-benefício,
+          especialmente nas gamas médias e altas, como Ryzen 5 e Ryzen 7, que
+          muitas vezes superam os concorrentes da Intel em termos de preço e
+          desempenho multi-core.
+        </p>
+        <h3>4. Consumo de Energia e Calor</h3>
+        <h4>Intel</h4>
+        <p>
+          Os processadores Intel são conhecidos por seu baixo consumo de energia
+          e eficiência térmica, o que pode ser uma vantagem em sistemas
+          compactos e laptops.
+        </p>
+        <h4>AMD</h4>
+        <p>
+          Os processadores Ryzen da AMD tendem a consumir mais energia e gerar
+          mais calor, especialmente os modelos de alta performance como Ryzen 9
+          e Threadripper. No entanto, com um bom sistema de refrigeração, isso
+          pode ser gerenciado.
+        </p>
+        <h3>5. Gráficos Integrados</h3>
+        <h4>Intel</h4>
+        <p>
+          Muitos processadores Intel vêm com gráficos integrados (Intel UHD
+          Graphics), o que pode ser suficiente para tarefas diárias e jogos
+          leves sem a necessidade de uma placa de vídeo dedicada.
+        </p>
+        <h4>AMD</h4>
+        <p>
+          A AMD oferece processadores com gráficos integrados sob a linha Ryzen
+          com gráficos Vega, que geralmente têm um desempenho superior aos
+          gráficos integrados da Intel, sendo adequados para jogos mais
+          exigentes e edição de vídeo.
+        </p>
+        <h3>6. Compatibilidade de Plataforma</h3>
+        <h4>Intel</h4>
+        <p>
+          A Intel costuma mudar os sockets com mais frequência, o que pode
+          exigir uma atualização da placa-mãe ao trocar de processador.
+        </p>
+        <h4>AMD</h4>
+        <p>
+          A AMD é conhecida por manter a compatibilidade do socket AM4 por
+          várias gerações de processadores Ryzen, facilitando as atualizações de
+          CPU sem necessidade de trocar a placa-mãe.
+        </p>
+        <h3>7. Conclusão: Qual escolher?</h3>
+        <h4>Para Jogos</h4>
+        <ul>
+          <li>
+            <strong>Intel: </strong>Se você busca o máximo desempenho em jogos,
+            especialmente em resoluções mais baixas (1080p), a Intel ainda pode
+            ter uma leve vantagem devido ao seu desempenho single-core superior.
+          </li>
+          <li>
+            <strong>AMD: </strong>No entanto, os processadores Ryzen 5000 e 7000
+            da AMD também oferecem excelente desempenho em jogos, muitas vezes a
+            um preço mais competitivo.
+          </li>
+        </ul>
+        <h4>Para Produtividade e Multitarefas</h4>
+        <ul>
+          <li>
+            <strong>AMD: </strong>Se você realiza muitas tarefas simultaneamente
+            ou usa aplicações que aproveitam múltiplos núcleos (como edição de
+            vídeo, renderização 3D, etc.), os processadores Ryzen da AMD são uma
+            excelente escolha.
+          </li>
+          <li>
+            <strong>Intel: </strong>Os processadores Intel de alto desempenho
+            também são uma boa opção, mas geralmente a um custo mais alto.
+          </li>
+        </ul>
+        <h4>Para Uso Geral e Orçamento</h4>
+        <ul>
+          <li>
+            <strong>AMD: </strong>Oferece excelente desempenho a preços
+            acessíveis, sendo uma ótima escolha para a maioria dos usuários.
+          </li>
+          <li>
+            <strong>Intel: </strong>Oferece opções econômicas, mas você pode
+            obter mais núcleos e threads pelo mesmo preço com a AMD.
+          </li>
+        </ul>
+        <h3>Considerações Finais</h3>
+        <p>
+          A escolha entre Intel e AMD dependerá das suas necessidades
+          específicas e do seu orçamento. Ambas as marcas oferecem produtos de
+          alta qualidade, e a decisão final deve considerar o uso pretendido do
+          computador, seja para jogos, produtividade, ou uso geral.
+        </p>
+      </article>
     </main>
     <footer>
-        <p>&copy; 2024 Reberson Tech</p>
-        <div class="social-media">
-            <a href="https://www.instagram.com/reberson.marques" target="_blank" class="social-icon">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.315 3.608 1.29.974.974 1.227 2.241 1.29 3.607.057 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.315 2.633-1.29 3.608-.974.974-2.241 1.227-3.607 1.29-1.265.057-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.315-3.608-1.29-.974-.974-1.227-2.241-1.29-3.607-.057-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.315-2.633 1.29-3.608.974-.974 2.241-1.227 3.607-1.29 1.265-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-1.281.059-2.57.327-3.59 1.346-1.019 1.019-1.287 2.309-1.346 3.59-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.059 1.281.327 2.57 1.346 3.59 1.019 1.019 2.309 1.287 3.59 1.346 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.281-.059 2.57-.327 3.59-1.346 1.019-1.019 1.287-2.309 1.346-3.59.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.059-1.281-.327-2.57-1.346-3.59-1.019-1.019-2.309-1.287-3.59-1.346-1.28-.058-1.688-.072-4.947-.072zM12 5.838c-3.396 0-6.162 2.766-6.162 6.162s2.766 6.162 6.162 6.162 6.162-2.766 6.162-6.162-2.766-6.162-6.162-6.162zm0 10.324c-2.297 0-4.162-1.865-4.162-4.162s1.865-4.162 4.162-4.162 4.162 1.865 4.162 4.162-1.865 4.162-4.162 4.162zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441zm0 2.482c-.573 0-1.041-.468-1.041-1.041s.468-1.041 1.041-1.041 1.041.468 1.041 1.041-.468 1.041-1.041 1.041z"/>
-                </svg>
-            </a>
-            <a href="https://wa.me/+5587999022256" target="_blank" class="social-icon">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.523 3.478c-4.226-4.229-11.078-4.297-15.351-.193-3.584 3.396-4.272 8.678-1.693 12.726l-1.449 4.263 4.35-1.416c4.13 2.709 9.703 2.033 13.104-1.582 4.109-4.287 4.141-11.145-.193-15.351zm-6.521 15.031c-2.225.501-4.583.098-6.452-1.185l-2.018.657.674-2.034c-1.432-1.989-1.901-4.514-1.146-6.859 1.061-3.383 4.151-5.61 7.636-5.61 4.501 0 8.162 3.659 8.162 8.162 0 3.479-2.228 6.568-5.637 7.612zm3.545-6.112l-.005-.017c-.1-.03-.563-.183-.921-.323-.246-.099-.508-.204-.774-.129-.227.064-.449.263-.611.449-.173.197-.305.367-.42.586-.097.182-.191.37-.323.495-.133.131-.259.176-.443.116-.228-.075-.464-.138-.691-.209-.353-.108-.698-.228-1.022-.408-.527-.297-.964-.733-1.324-1.237-.228-.314-.406-.657-.555-1.013-.031-.077-.065-.152-.088-.233-.065-.223.001-.41.141-.601.129-.177.284-.341.433-.506.115-.128.23-.257.329-.399.182-.276.285-.59.168-.91-.068-.183-.21-.339-.349-.476-.178-.177-.353-.349-.52-.532-.144-.156-.311-.33-.524-.355-.195-.021-.401.012-.588.048-.272.056-.516.213-.723.416-.209.205-.394.428-.553.668-.24.361-.399.755-.474 1.185-.074.421-.075.845.028 1.261.057.23.138.454.228.674.227.564.521 1.095.89 1.573.539.703 1.228 1.287 1.998 1.756.455.279.94.504 1.453.644.255.07.51.134.771.188.462.101.92.182 1.391.085.286-.057.554-.168.796-.324.315-.204.561-.486.824-.746.206-.204.398-.428.553-.674.146-.228.261-.48.391-.72.127-.233.056-.486-.026-.719-.147-.423-.286-.849-.458-1.264-.05-.126-.137-.288-.266-.328z"/>
-                </svg>
-            </a>
-        </div>      
+      <p>&copy; 2024 Reberson Tech</p>
+      <div class="social-media">
+        <a
+          href="https://www.instagram.com/reberson.marques"
+          target="_blank"
+          class="social-icon"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.315 3.608 1.29.974.974 1.227 2.241 1.29 3.607.057 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.315 2.633-1.29 3.608-.974.974-2.241 1.227-3.607 1.29-1.265.057-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.315-3.608-1.29-.974-.974-1.227-2.241-1.29-3.607-.057-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.315-2.633 1.29-3.608.974-.974 2.241-1.227 3.607-1.29 1.265-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-1.281.059-2.57.327-3.59 1.346-1.019 1.019-1.287 2.309-1.346 3.59-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.059 1.281.327 2.57 1.346 3.59 1.019 1.019 2.309 1.287 3.59 1.346 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.281-.059 2.57-.327 3.59-1.346 1.019-1.019 1.287-2.309 1.346-3.59.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.059-1.281-.327-2.57-1.346-3.59-1.019-1.019-2.309-1.287-3.59-1.346-1.28-.058-1.688-.072-4.947-.072zM12 5.838c-3.396 0-6.162 2.766-6.162 6.162s2.766 6.162 6.162 6.162 6.162-2.766 6.162-6.162-2.766-6.162-6.162-6.162zm0 10.324c-2.297 0-4.162-1.865-4.162-4.162s1.865-4.162 4.162-4.162 4.162 1.865 4.162 4.162-1.865 4.162-4.162 4.162zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441zm0 2.482c-.573 0-1.041-.468-1.041-1.041s.468-1.041 1.041-1.041 1.041.468 1.041 1.041-.468 1.041-1.041 1.041z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://wa.me/+5587999022256"
+          target="_blank"
+          class="social-icon"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.523 3.478c-4.226-4.229-11.078-4.297-15.351-.193-3.584 3.396-4.272 8.678-1.693 12.726l-1.449 4.263 4.35-1.416c4.13 2.709 9.703 2.033 13.104-1.582 4.109-4.287 4.141-11.145-.193-15.351zm-6.521 15.031c-2.225.501-4.583.098-6.452-1.185l-2.018.657.674-2.034c-1.432-1.989-1.901-4.514-1.146-6.859 1.061-3.383 4.151-5.61 7.636-5.61 4.501 0 8.162 3.659 8.162 8.162 0 3.479-2.228 6.568-5.637 7.612zm3.545-6.112l-.005-.017c-.1-.03-.563-.183-.921-.323-.246-.099-.508-.204-.774-.129-.227.064-.449.263-.611.449-.173.197-.305.367-.42.586-.097.182-.191.37-.323.495-.133.131-.259.176-.443.116-.228-.075-.464-.138-.691-.209-.353-.108-.698-.228-1.022-.408-.527-.297-.964-.733-1.324-1.237-.228-.314-.406-.657-.555-1.013-.031-.077-.065-.152-.088-.233-.065-.223.001-.41.141-.601.129-.177.284-.341.433-.506.115-.128.23-.257.329-.399.182-.276.285-.59.168-.91-.068-.183-.21-.339-.349-.476-.178-.177-.353-.349-.52-.532-.144-.156-.311-.33-.524-.355-.195-.021-.401.012-.588.048-.272.056-.516.213-.723.416-.209.205-.394.428-.553.668-.24.361-.399.755-.474 1.185-.074.421-.075.845.028 1.261.057.23.138.454.228.674.227.564.521 1.095.89 1.573.539.703 1.228 1.287 1.998 1.756.455.279.94.504 1.453.644.255.07.51.134.771.188.462.101.92.182 1.391.085.286-.057.554-.168.796-.324.315-.204.561-.486.824-.746.206-.204.398-.428.553-.674.146-.228.261-.48.391-.72.127-.233.056-.486-.026-.719-.147-.423-.286-.849-.458-1.264-.05-.126-.137-.288-.266-.328z"
+            />
+          </svg>
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

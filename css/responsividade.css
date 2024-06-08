@@ -1,0 +1,160 @@
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 0.5em 0;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+  }
+
+  #menu-toggle.open + ul {
+    display: flex;
+  }
+}
+
+/* Responsividade adicional */
+@media (max-width: 1024px) {
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    cursor: pointer;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  #menu-toggle.open + ul {
+    display: flex;
+  }
+  main {
+    padding: 5em 1em;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .post-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.5em;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  main {
+    padding: 4em 1em;
+  }
+
+  .banner-content h2 {
+    font-size: 2em;
+  }
+
+  .banner-content p {
+    font-size: 1em;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card img {
+    height: 120px;
+  }
+
+  .filter-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter,
+  .search {
+    margin: 0.5em 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  main {
+    padding: 3em 1em;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5em;
+  }
+
+  .banner-content p {
+    font-size: 0.9em;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card h3 {
+    font-size: 1.2em;
+  }
+
+  .post-card p {
+    font-size: 0.9em;
+  }
+
+  .filter-search {
+    flex-direction: column;
+  }
+
+  .filter,
+  .search {
+    margin: 0.5em 0;
+  }
+}
