@@ -102,7 +102,7 @@ article {
 article img {
   display: block;
   margin: 0 auto 4em auto;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 8px;
 }
