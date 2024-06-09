@@ -1,4 +1,51 @@
-@media (max-width: 768px) {
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 100%;
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+    padding: 0 1em;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333; /* Ajuste a cor de fundo conforme necessário */
+  }
+
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -10,46 +57,12 @@
     margin: 0.5em 0;
   }
 
-  #menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    cursor: pointer;
-  }
-
   #menu-toggle.open + ul {
     display: flex;
   }
-}
 
-/* Responsividade adicional */
-@media (max-width: 1024px) {
-  #menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    position: absolute;
-    top: 0;
-    right: 1em;
-    cursor: pointer;
-  }
-
-  nav {
-    padding: 0;
-    margin: 0;
-  }
-
-  #menu-toggle.open + ul {
-    display: flex;
-  }
   main {
+    width: 100%;
     padding: 5em 1em;
   }
 
@@ -69,7 +82,7 @@
 
 @media (max-width: 768px) {
   header {
-    padding: 0.5em;
+    padding: 0.5em 1em;
   }
 
   header h1 {
@@ -86,7 +99,11 @@
   }
 
   main {
-    padding: 4em 1em;
+    padding: 0;
+  }
+
+  section {
+    width: 90%;
   }
 
   .banner-content h2 {
@@ -126,6 +143,7 @@
   }
 
   main {
+    width: 100%;
     padding: 3em 1em;
   }
 
