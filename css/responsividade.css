@@ -8,6 +8,9 @@
 }
 
 @media (max-width: 1024px) {
+  #menu-toggle {
+    display: block;
+  }
   * {
     box-sizing: border-box;
   }
@@ -42,10 +45,6 @@
     margin: 0;
   }
 
-  #menu-toggle {
-    display: block;
-  }
-
   nav ul {
     display: none;
     flex-direction: column;
@@ -66,9 +65,19 @@
     padding: 5em 1em;
   }
 
+  .programs {
+    margin-top: 2em;
+  }
+
+  .contact-title {
+    padding-top: 1em;
+  }
+
   .form-group input,
   .form-group textarea {
-    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
   }
 
   .posts-grid {
@@ -81,6 +90,21 @@
 }
 
 @media (max-width: 768px) {
+  .title-article {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+  }
+  .article-image {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .banner,
+  .banner-content {
+    display: none;
+  }
   header {
     padding: 0.5em 1em;
   }
