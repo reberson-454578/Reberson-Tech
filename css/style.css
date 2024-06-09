@@ -31,6 +31,12 @@ header h1 {
   font-weight: 400;
 }
 
+header h1:hover {
+  color: #ff9900;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
