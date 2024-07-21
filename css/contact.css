@@ -17,6 +17,7 @@ form {
   margin-bottom: 0.5em;
   font-weight: bold;
   color: #333;
+  text-align: left;
 }
 
 .form-group i {
