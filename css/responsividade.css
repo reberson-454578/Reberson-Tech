@@ -1,0 +1,282 @@
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    margin: 0;
+    padding: 0.4rem;
+  }
+
+  #lista-navegacao {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #lista-navegacao a {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #lista-navegacao li {
+    padding: 0;
+    margin: 0;
+  }
+
+  #introducao {
+    text-align: center;
+    border-left: 2px solid var(--highlight-color);
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  #titulo-servicos {
+    margin: 0.6rem;
+  }
+
+  #container-cartoes {
+    gap: 1rem;
+    margin: 1rem 3rem;
+  }
+
+  #container-cartoes .artigo-servicos {
+    width: 42%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid var(--highlight-color);
+  }
+
+  #container-cartoes .artigo-servicos h3 {
+    font-size: 0.8rem;
+  }
+
+  #container-cartoes .artigo-servicos p {
+    display: none;
+  }
+
+  #depoimentos-container {
+    width: 90%;
+    gap: 0.6rem;
+    padding: 1.2rem;
+  }
+
+  .depoimentos-conteudo {
+    padding: 0.8rem 0;
+  }
+
+  #depoimentos-container span {
+    font-size: 0.9rem;
+  }
+
+  #posts-recentes .posts-recentes-conteudo {
+    width: 90%;
+  }
+
+  #posts-recentes .posts-recentes-conteudo h3 {
+    font-size: 1rem;
+  }
+
+  #downloads-populares div {
+    width: 90%;
+  }
+
+  #downloads-populares div h3 {
+    font-size: 1rem;
+  }
+
+  #contato div {
+    width: 90%;
+    text-align: center;
+  }
+
+  main #downloads {
+    padding: 0;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    border-left: 2px solid var(--highlight-color);
+    border-right: 2px solid var(--highlight-color);
+  }
+
+  #downloads h3 {
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+  }
+
+  #downloads .downloads-container {
+    width: 90%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  #downloads .downloads-container article {
+    width: 35%;
+    height: 120px;
+    gap: 0.4rem;
+  }
+
+  #downloads .downloads-container article img {
+    width: 40px;
+  }
+
+  #downloads .downloads-container article h3 {
+    font-size: 0.8rem;
+  }
+
+  #downloads .downloads-container article a {
+    font-size: 0.8rem;
+  }
+
+  #downloads .downloads-container .sistemas-operacionais-artigo {
+    height: 140px;
+  }
+
+  #downloads #sistemas-operacionais-titulo {
+    padding: 0.4rem 1.6rem;
+  }
+
+  main #posts {
+    padding: 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  main #post_apresentacao {
+    padding-bottom: 0;
+  }
+
+  main .post-apresentacao p {
+    font-size: 1rem;
+  }
+
+  main #posts .cards-posts {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    gap: 0;
+  }
+
+  main #posts #ultimo-post {
+    margin-right: 11rem;
+  }
+
+  main #posts .cards-posts img {
+    width: 130px;
+  }
+
+  main #posts h3 {
+    font-size: 0.8rem;
+  }
+
+  main #posts article span {
+    font-size: 0.5rem;
+    align-self: self-start;
+  }
+
+  main .post-apresentacao {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem 1.8rem;
+  }
+
+  main .post-apresentacao #lista-observacoes {
+    display: none;
+  }
+
+  .post-apresentacao img {
+    display: none;
+  }
+
+  .post-apresentacao h2 {
+    text-align: left;
+    margin: 0;
+  }
+
+  main .conteudo {
+    margin: 0;
+    padding: 1.6rem;
+  }
+
+  main .conteudo h3 {
+    font-size: 1rem;
+  }
+
+  main .conteudo p {
+    font-size: 1rem;
+  }
+
+  main .conteudo h4 {
+    font-size: 1rem;
+  }
+
+  main .conteudo #tabela {
+    font-size: 0.6rem;
+  }
+
+  #secao-contato .titulo-contato {
+    margin: 1rem;
+    font-size: 1rem;
+    padding-top: 0.8rem;
+  }
+
+  #secao-contato #form {
+    width: 90%;
+    text-align: center;
+  }
+
+  #secao-contato #form input {
+    width: 265px;
+    font-size: 0.9rem;
+  }
+
+  #secao-contato #form textarea {
+    width: 265px;
+    font-size: 0.9rem;
+  }
+
+  #secao-contato #form button {
+    width: 110px;
+  }
+
+  main #sobre {
+    padding-top: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  main #sobre h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.4rem 4rem;
+  }
+
+  main #sobre div {
+    width: 90%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}

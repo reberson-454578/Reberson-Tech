@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Cores */
+:root {
+  /* Cores principais */
+  --primary-color: #2c3e50; /* Cinza escuro suave */
+  --secondary-color: #ecf0f1; /* Cinza claro */
+
+  /* Cores de destaque */
+  --highlight-color: #3498db; /* Azul para botões e links */
+  --neutral-color: #ffffff; /* Branco puro */
+  --accent-color: #e67e22; /* Coral suave para ícones ou alertas */
+  --box-shadow-color: rgba(0, 0, 0, 0.1); /* Sombra */
+
+  /* Texto e fundo */
+  --text-color: #333333; /* Cor do texto principal */
+  --background-color: #f5f5f5; /* Cor de fundo da página */
+}
+
+/* Formatação Básica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  color: var(--secondary-color);
+  position: relative;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+header i {
+  padding: 0 0.4rem;
+}
+
+/* Menu de Navegação */
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  transition: all 0.2s ease;
+  border-bottom: 1.5px solid transparent;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  border-bottom: 1.5px solid var(--secondary-color);
+  transform: scale(1.05);
+}
+
+nav ul li a i {
+  padding-right: 0.4rem;
+}
+
+nav ul li {
+  transition: all 0.2s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.08);
+}
+
+/* Conteúdo Principal */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#introducao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+  border-radius: 8px;
+  border-left: 4px solid var(--highlight-color);
+  padding: 2rem;
+  width: 85%;
+  margin-top: 2rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Seção Serviços */
+#servicos {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#container-cartoes {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#container-cartoes article {
+  width: 15%;
+  height: 200px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+  text-align: center;
+  border-radius: 8px;
+  border: 3px solid var(--highlight-color);
+  padding: 1.8rem 1rem 1rem 1rem;
+  gap: 0.6rem;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+
+#container-cartoes article:hover {
+  border: 3px solid var(--accent-color);
+}
+
+#container-cartoes article h3 {
+  font-size: 1rem;
+  color: var(--highlight-color);
+  transition: all 0.2s ease;
+}
+
+#container-cartoes article h3:hover {
+  color: var(--accent-color);
+}
+
+#container-cartoes article p {
+  font-size: 0.9rem;
+}
+
+#container-cartoes article i {
+  color: var(--accent-color);
+  font-size: 1.4rem;
+}
+
+/* Seção Depoimentos */
+#depoimentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#depoimentos-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+  border: 2px solid var(--accent-color);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+#depoimentos-container:hover {
+  border: 2px solid var(--highlight-color);
+}
+
+#depoimentos-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Seções Posts Recentes e Downloads e Populares */
+#posts-recentes,
+#downloads-populares {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#posts-recentes h2,
+#downloads-populares h2 {
+  text-align: center;
+}
+
+#posts-recentes div,
+#downloads-populares div {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+  border-right: 2px solid var(--highlight-color);
+  border-left: 2px solid var(--highlight-color);
+  cursor: default;
+  width: 60%;
+}
+
+#posts-recentes a {
+  text-decoration: none;
+  color: var(--highlight-color);
+  font-weight: 500;
+  width: 70px;
+  transition: all 0.2s ease;
+}
+
+#downloads-populares a {
+  text-decoration: none;
+  color: var(--highlight-color);
+  font-weight: 500;
+  width: 140px;
+  transition: all 0.2s ease;
+}
+
+#posts-recentes a:hover,
+#downloads-populares a:hover {
+  color: var(--accent-color);
+}
+
+/* Seção Contato */
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#contato div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+  border-right: 2px solid var(--highlight-color);
+  border-left: 2px solid var(--highlight-color);
+  cursor: default;
+  width: 60%;
+  padding: 1rem;
+}
+
+#contato div a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: #e67e22;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: 0.6rem 1rem;
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+  border-radius: 8px;
+}
+
+#contato div a:hover {
+  transform: scale(1.06);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+footer p {
+  color: var(--secondary-color);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer div a {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+}
+
+footer div a:hover {
+  color: var(--accent-color);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

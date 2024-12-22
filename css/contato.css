@@ -1,0 +1,100 @@
+@import url(/css/style.css);
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+#secao-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#secao-contato h2 {
+  padding: 2rem 8rem 0.6rem 8rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--accent-color);
+  border-image: linear-gradient(
+      90deg,
+      var(--background-color),
+      var(--highlight-color),
+      var(--background-color)
+    )
+    1;
+}
+
+#secao-contato form {
+  background-color: var(--secondary-color);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-right: 2px solid var(--accent-color);
+  border-left: 2px solid var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px var(--box-shadow-color);
+}
+
+#secao-contato .container-inputs {
+  position: relative;
+}
+
+#secao-contato input,
+textarea {
+  padding: 0.5rem 0.2rem 0.5rem 2.2rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 350px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  outline: 2px solid transparent;
+}
+
+#secao-contato input:focus,
+#secao-contato textarea:focus {
+  outline: 2px solid var(--accent-color);
+}
+
+#secao-contato textarea {
+  resize: none;
+}
+
+#secao-contato i {
+  position: absolute;
+  color: var(--highlight-color);
+  opacity: 0.8;
+  left: 10px;
+  top: 7px;
+}
+
+#secao-contato button {
+  border: none;
+  width: 25%;
+  color: var(--secondary-color);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.6rem 0;
+  background-color: var(--highlight-color);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#secao-contato button:hover {
+  transform: scale(1.06);
+}
+
+#rodape-contato {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

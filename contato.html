@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9bccb43d81.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsividade.css" />
+    <link rel="stylesheet" href="/css/contato.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/envelope-solid.svg"
+      type="image/x-icon"
+    />
+    <title>Contato</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1><i class="fa-solid fa-laptop"></i>Reberson Tech</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+      <ul id="lista-navegacao">
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house"></i>Início</a>
+        </li>
+        <li>
+          <a href="downloads.html"
+            ><i class="fa-solid fa-download"></i>Downloads</a
+          >
+        </li>
+        <li>
+          <a href="posts.html"><i class="fa-solid fa-blog"></i>Posts</a>
+        </li>
+        <li>
+          <a href="contato.html"><i class="fa-solid fa-envelope"></i>Contato</a>
+        </li>
+        <li>
+          <a href="sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contato -->
+    <section id="secao-contato">
+      <h2 class="titulo-contato">Contato</h2>
+      <form id="form" action="https://formspree.io/f/xqkjlynr" method="POST">
+        <div class="container-inputs">
+          <i class="fa-solid fa-user"></i>
+          <input required type="text" placeholder="Digite seu nome completo" />
+        </div>
+        <div class="container-inputs">
+          <i class="fa-solid fa-envelope"></i>
+          <input required type="email" placeholder="Digite seu e-mail" />
+        </div>
+        <div class="container-inputs">
+          <i class="fa-solid fa-comments"></i>
+          <textarea
+            placeholder="Digite sua mensagem"
+            name="mensagem"
+            id=""
+            rows="5"
+            cols="30"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="rodape-contato">
+      <p>© 2024 Reberson Tech</p>
+      <div>
+        <a target="_blank" href="https://www.instagram.com/reberson.marques/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a target="_blank" href="https://wa.me/+5587999022256"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
